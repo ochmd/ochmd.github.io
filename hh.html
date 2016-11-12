@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hh</title>
+    <script src="../js/ajax.js"></script>
+    <script>
+        window.onload=function(){
+            var obtn=document.getElementById("btn");
+            obtn.onclick=function(){
+
+                ajax({
+                    type: 'post',
+                    url: 'http://localhost/form.php',
+                    data: {
+                        username: '3333',
+                        password: '6666&=&='
+                    },
+                    fn: function (data) {
+                        console.log(data);
+                    }
+                });
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+	<h3>hello world</h3>
+<form action="http://localhost/form.php" meathod="post">
+    用户名;<input type="text" name="user">
+    密码;<input type="password" name="password">
+    <input type="submit" value="提交">
+</form>
+<button id="btn">发送</button>
+<a href="http://www.baidu.com" target="_blank">百度首页</a>
+</body>
+</html>
