@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>瀑布流</title>
+    <style>
+        *{margin:0;padding:0;}
+        img{vertical-align: bottom}
+        #box{width:780px;position:relative;margin: 30px auto;}
+        .pbl{position: absolute}
+       .pbl img{width:220px;margin:10px;padding:10px;background:#fff;
+           border-radius: 10px;box-shadow:0 0 10px #ccc; }
+#loading{position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 30px;}
+
+    </style>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/bufferMove.js"></script>
+    <script src="js/pul.js"></script>
+</head>
+<body>
+<div id="box">
+    <div class="pbl"><a href="javascript:;"><img src="img/1.jpg" alt=""></a></div>
+    <div class="pbl"><a href="javascript:;"><img src="img/2.jpg" alt=""></a></div>
+    <div class="pbl"><a href="javascript:;"><img src="img/3.jpg" alt=""></a></div>
+    <div class="pbl"><a href="javascript:;"><img src="img/4.jpg" alt=""></a></div>
+    <div class="pbl"><a href="javascript:;"><img src="img/5.jpg" alt=""></a></div>
+    <div class="pbl"><a href="javascript:;"><img src="img/6.jpg" alt=""></a></div>
+    <div class="pbl"><a href="javascript:;"><img src="img/7.jpg" alt=""></a></div>
+    <div class="pbl"><a href="javascript:;"><img src="img/8.jpg" alt=""></a></div>
+    <div class="pbl"><a href="javascript:;"><img src="img/9.jpg" alt=""></a></div>
+    <div class="pbl"><a href="javascript:;"><img src="img/10.jpg" alt=""></a></div>
+    <div class="pbl"><a href="javascript:;"><img src="img/11.jpg" alt=""></a></div>
+    <div class="pbl"><a href="javascript:;"><img src="img/12.jpg" alt=""></a></div>
+</div>
+<img src="img/load.gif" alt="" id="loading">
+
+</body>
+</html>
