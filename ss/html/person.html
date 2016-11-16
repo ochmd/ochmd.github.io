@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,
+    minimum-scale=1.0,user-scalable=no">
+    <title>ochmd简历</title>
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/swiper-3.3.1.jquery.min.js"></script>
+    <script src="../js/swiper.animate1.0.2.min.js"></script>
+    <link rel="stylesheet" href="../css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+   <link rel="stylesheet" href="../css/person.css" />
+</head>
+<body>
+
+<img src="../images/wx.png" alt="" id="wx">
+<img src="../images/left1.png" alt="" id="namel">
+<img src="../images/name.png" alt="" id="name">
+<div id="wrap">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide first">
+                <img src="../images/own.png" alt="" class="ani"
+                     swiper-animate-effect="fadeInDown" swiper-animate-delay=".5s">
+                <img src="../images/hf.png" alt="" class="ani"
+                     swiper-animate-effect="fadeInUp" swiper-animate-duration="1s">
+                <img src="../images/cc.png" alt="" class="ani"
+                     swiper-animate-effect="fadeInRight" >
+                <img src="../images/bb.png" alt="" class="ani"
+                     swiper-animate-effect="fadeIn">
+                <img src="../images/me.png" alt="" class="ani"
+                     swiper-animate-effect="fadeIn">
+                     
+            </div>
+            <div class="swiper-slide second">
+                <img src="../images/jy.png" alt="" class="ani"
+                     swiper-animate-effect="fadeIn" swiper-animate-delay="0.5s">
+                <img src="../images/br1.png" alt="" class="ani"
+                     swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s">
+                <img src="../images/jl.png" alt="" class="ani"
+                     swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s">
+                <img src="../images/br2.png" alt="" class="ani"
+                     swiper-animate-effect="fadeInRight" swiper-animate-duration="1s">
+                <img src="../images/jl1.png" alt="" class="ani"
+                     swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"></div>
+           
+           <div class="swiper-slide three">
+                <img src="../images/t2.png" alt="" class="ani"
+                     swiper-animate-effect="fadeInUp" swiper-animate-delay="0.2s">
+                <img src="../images/skill.png" alt="" class="ani"
+              swiper-animate-effect="bounceIn" swiper-animate-duration="1s">
+                <img src="../images/mjscd1.png" alt="" class="ani"
+                     swiper-animate-effect="fadeInLeft" swiper-animate-delay="0.2s">
+                <img src="../images/mjscd2.png" alt="" class="ani"
+              swiper-animate-effect="fadeInRight" swiper-animate-delay="1s">
+           
+           
+           
+            </div>
+            <div class="swiper-slide four">
+                <img src="../images/ftt.png" alt="" class="ani"
+                     swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s">
+                <img src="../images/ftr.png" alt="" class="ani"
+                     swiper-animate-effect="fadeInRight" swiper-animate-duration="1s">
+                <img src="../images/fb.png" alt="" class="ani"
+                     swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s">
+                <img src="../images/ft.png" alt="" class="ani"
+                     swiper-animate-effect="rubberBand" swiper-animate-duration="0.5s">
+                <img src="../images/zxw.png" alt="" class="ani"
+                     swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s">
+           
+            
+            </div>
+            <div class="swiper-slide five">
+                <img src="../images/fbrid.png" alt="" class="ani"
+                     swiper-animate-effect="fadeInLeft">
+                <img src="../images/ffr.png" alt="" class="ani"
+                     swiper-animate-effect="fadeInRight" swiper-animate-duration="1s">
+                <img src="../images/ffbo.png" alt="" class="ani"
+                     swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s">
+                <img src="../images/hff.png" alt="" class="ani"
+                     swiper-animate-effect="wobble" swiper-animate-duration="1s">
+                <img src="../images/cm1.png" alt="" class="ani"
+                     swiper-animate-effect="zoomInDown" swiper-animate-dalay="1s">
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+
+
+<div id="link">
+    <a href="javascript:" id="chance">give me a chance</a>
+    <div id="show">
+        <h3>前端更贴近用户，这种体验非常美妙,梦想成为前端工程师</h3>
+        <p>请给我一个展现的机会</p>
+        <p>邮箱：837652361@qq.com</p>
+        <p>请扫左边微信，期待您的联系</p>
+        <p>真诚感谢</p>
+    </div>
+    
+</div>
+<script>
+    var mySwiper=new Swiper(".swiper-container",{
+        direction:"vertical",
+       // pagination:".swiper-pagination",
+        keyboardControl : true,
+        mousewheelControl : true,
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+        }
+
+    })
+
+    var mc=document.getElementById("chance");
+    var mshow=document.getElementById("show");
+    mc.onmouseover=function(){
+        mc.className="green";
+    }
+    mc.onmouseout=function(){
+       mc.className=' '
+    }
+mc.onclick=function(){
+
+    mshow.style.display="block";
+    mc.style.display="none";
+}
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+ @media screen and (max-width:415px ){
+            #wrap{width:100%;height:100%;margin:0 auto;}
+            #name,#namel,#wx,#chance{display: none}
+        }
+        @media screen and (min-width:416px ){
+            #wrap{width:60%;height:100%;margin:0 auto;}
+            #name{display:block;width:15%;height:50px;position: absolute;top:15%;right:5%;
+                z-index:15;}
+            #namel{display:block;width:15%;height:35px;position: absolute;top:75%;left:2%;
+                z-index:15;}
+            #wx{display:block;width:15%;height:126px;position: absolute;top:60%;left:2%;
+                z-index:15;}
+            #chance{width:126px;height:126px;color:wheat;text-align: center;display: flex;
+                background: #aaa;position: absolute;top:60%;right:4%;border-radius: 50%;
+                line-height: 30px;font-size: 22px;align-items: center}
+
+        }
+        body,html,div,h1,h2,h3,span,img,a,i,em,p,form{margin:0;padding:0;}
+        body{margin:0;cursor:pointer}
+        a{text-decoration: none}
+        html,body,.swiper-container{height:100%;width:100%}
+        .ani{position: absolute}
+        .green{box-shadow: 0 0 2px 1px greenyellow}
+        #show{width:18%;height:150px;position: absolute;top:60%;right:1%;display: none}
+        #show h3{font-style: normal;font-size: 14px;color:#aaa;text-indent: 14px;line-height: 25px;}
+        #show p{font-size: 14px;color:#666;text-indent: 10px;line-height: 20px;}
+        #show p:nth-of-type(4){font-size: 18px;color:orange;text-align: center}
+        
+        .first{background: url("../images/p1.png") no-repeat ;background-size:cover }
+        .first .ani:nth-of-type(1){top:10%;left:26%;width:52%;height:10%}
+        .first .ani:nth-of-type(2){top:5%;left:50%;margin-left: -45px;animation: move1 1s;width:16%;height:18%}
+        .first .ani:nth-of-type(3){top:80%;right:80%;animation:move2 3.6s;width:24.5%;height:9%;
+            animation-iteration-count: infinite;animation-direction:alternate;}        
+        .first .ani:nth-of-type(4){bottom:0;left:0;width:80%;height:24.5%}
+         .first .ani:nth-of-type(5){bottom:40%;left:30%;width:40%;height:26%;animation: move4 2s;
+         animation-iteration-count: infinite;}
+        
+        .second{background: url("../images/s2.png") no-repeat ;background-size:cover}
+        .second .ani:nth-of-type(1){top:10%;left:70%;width:16%;height:13%}
+        .second .ani:nth-of-type(2){top:5%;left:0;width:31%;height:26%}
+        .second .ani:nth-of-type(3){top:10%;left:50%;margin-left: -40px;width:21%;height:7.5%}
+        .second .ani:nth-of-type(4){bottom:0;right:0;width:31%;height:43%}
+        .second .ani:nth-of-type(5){top:30%;right:30%;width:50%;height:20%}
+
+       .three{background:url("../images/t1.png") no-repeat ;background-size:cover;}
+        .three .ani:nth-of-type(1){bottom: 0;left:0;width:100%;height:30%}
+        .three .ani:nth-of-type(2){top: 10%;left:30%;width:45%;height:9%}
+        .three .ani:nth-of-type(3){top: 25%;left:20%;width:60%;height:15%}
+        .three .ani:nth-of-type(4){top: 35%;left:20%;width:60%;height:15%}
+
+        .four{background:url("../images/fbg.png") no-repeat ;background-size:cover }
+        .four .ani:nth-of-type(1){top: 0;left:0;width:30%;height:40%}
+        .four .ani:nth-of-type(2){top: 10%;right:0;width:18%;height:15%}
+        .four .ani:nth-of-type(3){bottom: 0;right:0;width:45%;height:28%}
+        .four .ani:nth-of-type(4){top: 8%;left:30%;width:45%;height:8%}
+        .four .ani:nth-of-type(5){top: 25%;left:20%;width:60%;height:8%}
+
+        .five{background:url("../images/ffbg1.png") no-repeat ;background-size:cover }
+        .five .ani:nth-of-type(1){top: 20%;left:10%;width:30%;height:12%}
+        .five .ani:nth-of-type(2){bottom: 20%;right:0;width:85%;height:30%}
+        .five .ani:nth-of-type(3){bottom: 0;right:0;width:100%;height:15%}
+        .five .ani:nth-of-type(4){top: 40%;left:10%;width:70%;height:15%;animation: move3 2s;
+        animation-iteration-count: infinite;animation-direction:alternate;}
+          .five .ani:nth-of-type(5){top: 60%;left:26%;width:40%;height:10%}
+        @keyframes move1 {
+            0%{
+                top:70%;
+            }
+            100%{
+               top:5%;
+
+            }
+        }
+        @keyframes move2 {
+            0%{
+                right:5%;
+            }
+            100%{
+                top:80%;
+
+            }
+        }
+        @keyframes move3 {
+                0%{
+                    left:15%;
+                }
+                100%{
+                    left:9%;
+
+                }
+            }
+@keyframes move4 {
+                0%{
+                    opacity:1;
+                }
+                50%{
+                    opacity:.3;
+
+                }
+                 100%{
+                    opacity:1;
+
+                }
+            }
+
+
